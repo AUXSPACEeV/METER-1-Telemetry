@@ -101,10 +101,6 @@ The following packages are required to deploy the codebase:
 picocom -b 115200 $PICO_DEV
 
 # Terminal window 2
-## Declare "secret" variables for settings.toml
-export CIRCUITPY_WIFI_SSID = "<WIFI_SSID>"
-export CIRCUITPY_WIFI_PASSWORD = "<WIFI_AP_PW>"
-## Run the scripts
 ./scripts/deploy.sh
 ```
 
