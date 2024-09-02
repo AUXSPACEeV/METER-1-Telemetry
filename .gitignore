@@ -1,0 +1,12 @@
+sdk/
+.venv/
+.env/
+env/
+venv/
+
+.vscode/
+
+# deploy.sh manages this
+settings.toml
+
+**.env
