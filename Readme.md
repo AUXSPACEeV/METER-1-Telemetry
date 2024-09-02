@@ -14,7 +14,7 @@
 
 ### Hardware Setup
 
-![hardware setup](/doc/telemetry_pico/RPIpicow-tele.drawio.png)
+![hardware setup](/doc/img/RPIpicow-tele.drawio.png)
 
 ### Software Setup
 
@@ -107,3 +107,19 @@ export CIRCUITPY_WIFI_PASSWORD = "<WIFI_AP_PW>"
 ## Run the scripts
 ./scripts/deploy.sh
 ```
+
+## Webserver
+
+This project also contains a webserver running on the RPI.
+To get access, connect to the access point called `AUXSPACE-METER`.
+The default password is set to `12345678`.
+These values can be changed by calling `scripts/deploy.sh` with the
+environment variables `CIRCUITPY_WIFI_PASSWORD` and `CIRCUITPY_WIFI_SSID`:
+
+```bash
+CIRCUITPY_WIFI_PASSWORD="mypasswd" \
+    CIRCUITPY_WIFI_SSID="myssid" \
+    ./scripts/deploy.sh
+```
+
+On the webserver, you can download and delete files from the SD-Card.
